@@ -9,7 +9,7 @@ node:
     build: ./node
     restart: always
     volumes:
-        - "/var/docker/projects/7coins/app:/usr/src/app"
+        - "/pasta/do/projeto/app:/usr/src/app"
     links:
         - "mongo:mongo"
     ports:
