@@ -1,4 +1,4 @@
-FROM node:6.3.0-onbuild
+FROM node:6.3.1-slim
 
 VOLUME ["/usr/src/app"]
 
