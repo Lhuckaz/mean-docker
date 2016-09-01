@@ -6,4 +6,4 @@ Para utilizar:
     cd mean-docker
     docker-compose up
     
-Copiar a pasta da sua para ```app```
+Copiar a pasta da sua aplicação para ```app```
