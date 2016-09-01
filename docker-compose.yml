@@ -9,7 +9,7 @@ node:
     build: ./node
     restart: always
     volumes:
-        - "/usr/src/app:/usr/src/app"
+        - "./app:/usr/src/app"
     links:
         - "mongo:mongo"
     ports:
