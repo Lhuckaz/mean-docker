@@ -7,3 +7,5 @@ Para utilizar:
     docker-compose up
     
 Copiar a pasta da sua aplicação para ```app```
+
+Acessar http://\<host\>:3000
