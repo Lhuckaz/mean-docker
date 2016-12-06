@@ -16,7 +16,8 @@ before_install:
   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
-  - docker pull mongo node:6.3.1-slim
+  - docker pull mongo
+  - docker pull node:6.3.1-slim
   - docker build -t meandocker_mongo ./node
   - docker-compose -d up
   - docker-compose ps
