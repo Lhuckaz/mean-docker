@@ -19,7 +19,7 @@ before_install:
   - docker pull mongo
   - docker pull node:6.3.1-slim
   - docker build -t meandocker_mongo ./node
-  - docker-compose -d up
+  - docker-compose up -d
   - docker-compose ps
 
 script:
