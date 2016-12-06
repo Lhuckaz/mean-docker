@@ -1,7 +1,7 @@
 {
   "name": "teste",
   "version": "1.0.0",
-  "description": "",
+  "description": "NodeJS",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
