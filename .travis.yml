@@ -3,7 +3,7 @@ sudo: required
 language: node
 
 node_js:
-  - 4.5.0
+  - 6
 
 services:
   - docker
@@ -16,9 +16,9 @@ before_install:
   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
-  - docker pull mongo
-  - docker build -t node ./node
-  - docker-compose up
+  - docker pull mongo node:6.3.1-slim
+  - docker build -t meandocker_mongo ./node
+  - docker-compose -d up
   - docker-compose ps
   - docker run carlad/sinatra /bin/sh -c "cd /root/sinatra; bundle exec rake test"
 
